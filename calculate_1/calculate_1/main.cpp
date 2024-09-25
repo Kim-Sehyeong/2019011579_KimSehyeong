@@ -8,7 +8,7 @@ int main(void)
 	double recheight = 0.0;
 	double cirrad = 0.0;
 	double sphrad = 0.0;
-	double pi = 3.14159265359;
+	const int pi = 3.14159265359;
 
 	printf("input values : (tribase, triheight, recbase, recheight, cirrad, sphrad)\n");
 	scanf_s("%lf %lf %lf %lf %lf %lf", &tribase, &triheight, &recbase, &recheight, &cirrad, &sphrad);
