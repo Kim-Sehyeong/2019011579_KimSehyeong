@@ -1,3 +1,3 @@
 ﻿  main.cpp
-C:\Users\User\Documents\GitHub\CJU_KIMSEHYEONG\calculate_1\calculate_1\main.cpp(11,17): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\User\Documents\GitHub\CJU_KIMSEHYEONG\calculate_1\calculate_1\main.cpp(6,17): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   calculate_1.vcxproj -> C:\Users\User\Documents\GitHub\CJU_KIMSEHYEONG\calculate_1\x64\Debug\calculate_1.exe

@@ -2,11 +2,7 @@
 
 int main(void)
 {
-	double ft = 0.0;
-	double in = 0.0;
-	double slug = 0.0;
-	double m = 0.0;
-	double kg = 0.0;
+	double ft, in, slug, m, kg = 0.0;
 
 	printf("Input values : (ft to m, m to ft, in to m, m to in, slug to kg, kg to slug)\n");
 	scanf_s("%lf %lf %lf %lf %lf %lf", &ft, &m, &in, &m, &slug, &kg);

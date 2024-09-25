@@ -2,12 +2,7 @@
 
 int main(void)
 {
-	double tribase = 0.0;
-	double triheight = 0.0;
-	double recbase = 0.0;
-	double recheight = 0.0;
-	double cirrad = 0.0;
-	double sphrad = 0.0;
+	double tribase, triheight, recbase, recheight, cirrad, sphrad = 0.0;
 	const int pi = 3.14159265359;
 
 	printf("input values : (tribase, triheight, recbase, recheight, cirrad, sphrad)\n");
