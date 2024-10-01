@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\degree_convert\degree_convert\main.cpp(8,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\degree_convert\degree_convert\main.cpp(11,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  degree_convert.vcxproj -> D:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\degree_convert\x64\Debug\degree_convert.exe
