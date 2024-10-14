@@ -2,34 +2,30 @@
 
 int main(void)
 {
-	int num_1, num_2, add, subtract, multiply, divide = 0;
+	int num_1, num_2, result = 0;
 	char type;
-	printf("Input two numbers and type of operation : (num1, num2, type)");
-	scanf_s("%d %d %c", &num_1, &num_2, &type, sizeof(type));
+	printf("Input two numbers and type of operation : (num1, type, num2)");
+	scanf_s("%d %c %d", &num_1, &type, sizeof(type), &num_2);
 
-	if (type == 'a')
+	if (type == '+')
 	{
-		int add = num_1 + num_2;
-		printf("%d", add);
+		result = num_1 + num_2;
 	}
-	else if (type == 's')
+	else if (type == '-')
 	{
-		int subtract = num_1 - num_2;
-		printf("%d", subtract);
+		result = num_1 - num_2;
 	}
-	else if (type == 'm')
+	else if (type == '*')
 	{
-		int multiply = num_1 * num_2;
-		printf("%d", multiply);
+		result = num_1 * num_2;
 	}
-	else if(type == 'd')
+	else if(type == '/')
 	{
-		int divide = num_1 / num_2;
-		printf("%d", divide);
+		result = num_1 / num_2;
+	
 	}
-	else
-	{
-		printf("You've Written Wrong type of operation");
-	}
+	printf("%d", result);
+
+	
 	return 0;
 }
