@@ -15,24 +15,6 @@ int main(void)
 						  //같은 방법으로 A~D등급을 매긴다.
 		switch (res)
 		{
-		case 0:
-			grade = 'F';
-			break;
-		case 1:
-			grade = 'F';
-			break;
-		case 2:
-			grade = 'F';
-			break;
-		case 3:
-			grade = 'F';
-			break;
-		case 4:
-			grade = 'F';
-			break;
-		case 5:
-			grade = 'F';
-			break;
 		case 6:
 			grade = 'D';
 			break;
@@ -45,8 +27,11 @@ int main(void)
 		case 9:
 			grade = 'A';
 			break;
-		default:
+		case 10:
 			grade = 'A';
+			break;
+		default:
+			grade = 'F';
 			break;
 		}
 		printf("You're grade is %c", grade); //등급을 출력
