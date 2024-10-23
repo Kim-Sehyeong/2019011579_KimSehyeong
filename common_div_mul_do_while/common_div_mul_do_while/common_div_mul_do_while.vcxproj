@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{691dbef1-11d5-45b3-a1f8-604cba324985}</ProjectGuid>
-    <RootNamespace>forwhilepractice</RootNamespace>
+    <ProjectGuid>{c7a93c42-f49f-4d1a-9213-a2d5fa8f65d5}</ProjectGuid>
+    <RootNamespace>commondivmuldowhile</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>time_table</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
