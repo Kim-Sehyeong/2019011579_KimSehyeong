@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{691dbef1-11d5-45b3-a1f8-604cba324985}</ProjectGuid>
-    <RootNamespace>forwhilepractice</RootNamespace>
+    <ProjectGuid>{a5f32d5b-9386-43dd-991b-1034407196e1}</ProjectGuid>
+    <RootNamespace>timetable</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>time_table</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
