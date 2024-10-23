@@ -14,7 +14,7 @@ int main(void)
 	else if (type == '-')
 	{
 		result = num_1 - num_2;
-	}
+	}  
 	else if (type == '*')
 	{
 		result = num_1 * num_2;
@@ -24,7 +24,7 @@ int main(void)
 		result = num_1 / num_2;
 	
 	}
-	printf("%d", result);
+	printf("%d", result);z
 
 	
 	return 0;
