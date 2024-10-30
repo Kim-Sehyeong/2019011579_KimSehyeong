@@ -29,7 +29,7 @@ int main(void)
 
 double get_rad(double num) //라디안 변환 함수 
 {
-	return num * 180 / pi;
+	return num * pi / 180;
 }
 
 
