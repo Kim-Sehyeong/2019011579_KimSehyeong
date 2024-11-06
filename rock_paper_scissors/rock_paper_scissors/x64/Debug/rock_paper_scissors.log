@@ -1,5 +1,2 @@
 ﻿  main.cpp
-C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\rock_paper_scissors\rock_paper_scissors\main.cpp(88,15): error C2374: 'nComRps': 재정의. 여러 번 초기화했습니다.
-      C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\rock_paper_scissors\rock_paper_scissors\main.cpp(65,15):
-      'nComRps' 선언을 참조하십시오.
-  
+  rock_paper_scissors.vcxproj -> C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\rock_paper_scissors\x64\Debug\rock_paper_scissors.exe
