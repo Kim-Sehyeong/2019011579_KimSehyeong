@@ -24,7 +24,6 @@ unsigned int GenRandFlipCoin(unsigned int nRange)
     unsigned int nNum = rand();
     while (1)
     {
-
         nRes = ((unsigned int)(rand()) % (nRange)); //nRange 는 COIN_FWD_BWD를 받고 있음. rand()로 무작위 수를 3으로 나누면 나머지는 0, 1, 2 중 하나
         if ((nRes == COIN_FWD_STATUS) || (nRes == COIN_BWD_STATUS)) //나머지가 1, 2일 때만 break
             break;

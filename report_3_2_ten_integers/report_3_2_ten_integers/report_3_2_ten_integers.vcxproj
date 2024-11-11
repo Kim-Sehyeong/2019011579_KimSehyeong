@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{73c78c74-d291-438c-b14f-102f03bdac3b}</ProjectGuid>
-    <RootNamespace>Report3FlipCoin</RootNamespace>
+    <ProjectGuid>{edaa0a04-dbf3-4d20-b4d6-8a3f871a240c}</ProjectGuid>
+    <RootNamespace>report32tenintegers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
