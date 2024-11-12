@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{106adb97-9f31-483b-9f84-ed9cd5292668}</ProjectGuid>
-    <RootNamespace>report32tenintegers</RootNamespace>
+    <ProjectGuid>{c5248351-9320-415c-9414-6e30311efebe}</ProjectGuid>
+    <RootNamespace>report33updown</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

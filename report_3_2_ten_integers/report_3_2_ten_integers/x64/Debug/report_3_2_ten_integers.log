@@ -1,2 +1,4 @@
 ﻿  main.cpp
+C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\report_3_2_ten_integers\report_3_2_ten_integers\main.cpp(28,16): warning C4244: 'return': 'double'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\report_3_2_ten_integers\report_3_2_ten_integers\main.cpp(78,19): warning C4244: '인수': 'double'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   report_3_2_ten_integers.vcxproj -> C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\report_3_2_ten_integers\x64\Debug\report_3_2_ten_integers.exe
