@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{91b46eae-a038-4df8-aa91-6e7b291c7708}</ProjectGuid>
+    <ProjectGuid>{8133e77e-af62-4ba2-b352-5fbdd3fbd638}</ProjectGuid>
     <RootNamespace>report33updown</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

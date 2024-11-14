@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define CHANCE 20
+#define CHANCE 10
 
 void GenRandSeed()
 {
@@ -24,7 +24,6 @@ int main(void)
     int num = 0;
     int nRanNum = 0;
     nRanNum = GenRandInt();
-    printf("(secret answer : %d)\n", nRanNum);
 
     for (int i = 0; i < CHANCE; i++)
     {
