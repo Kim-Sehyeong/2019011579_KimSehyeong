@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define CHANCE 20
+
 void GenRandSeed()
 {
     srand((unsigned int)(time(NULL)));
@@ -18,39 +20,43 @@ unsigned int GenRandInt(void)
 int main(void)
 {
     GenRandSeed();
-    
+
     int num = 0;
     int nRanNum = 0;
     nRanNum = GenRandInt();
     printf("(secret answer : %d)\n", nRanNum);
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < CHANCE; i++)
     {
         printf("Input a number.\n");
         scanf_s("%d", &num);
-        if (i < 9)
+        if (i < CHANCE - 1)
         {
             if (num == nRanNum)
             {
                 printf("Correct!\n");
                 break;
             }
-            else if (num > nRanNum) printf("Down\n");
-            else if (num < nRanNum) printf("Up\n");
+            else if (num > nRanNum)
+            {
+                printf("Down. [chance : %d / %d]\n", CHANCE - (i + 1), CHANCE);
+            }
+            else
+            {
+                printf("Up. [chance : %d / %d]\n", CHANCE - (i + 1), CHANCE);
+            }
         }
         else
         {
             if (num == nRanNum)
             {
                 printf("Correct!\n");
-                break;
             }
             else
             {
                 printf("The end... The answer is %d\n", nRanNum);
             }
         }
-        
     }
     return 0;
 }

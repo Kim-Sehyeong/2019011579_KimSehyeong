@@ -1,2 +1,2 @@
 ﻿  main.cpp
-  report_3_3_up_down.vcxproj -> C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\report_3_3_up_down\x64\Debug\report_3_3_up_down.exe
+LINK : fatal error LNK1168: C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\report_3_3_up_down\x64\Debug\report_3_3_up_down.exe을(를) 쓰기용으로 열 수 없습니다.
