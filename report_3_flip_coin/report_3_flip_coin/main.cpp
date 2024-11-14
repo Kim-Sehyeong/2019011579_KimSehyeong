@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
 
 #define NUM_FLIP 10000
 #define COIN_FWD_BWD 3
@@ -21,14 +20,12 @@ void GenRandSeed()
 unsigned int GenRandFlipCoin(unsigned int nRange)
 {
     unsigned int nRes = 0;
-    unsigned int nNum = rand();
     while (1)
     {
         nRes = ((unsigned int)(rand()) % (nRange)); //nRange 는 COIN_FWD_BWD를 받고 있음. rand()로 무작위 수를 3으로 나누면 나머지는 0, 1, 2 중 하나
         if ((nRes == COIN_FWD_STATUS) || (nRes == COIN_BWD_STATUS)) //나머지가 1, 2일 때만 break
             break;
     }
-
     return nRes;
 }
 
@@ -70,11 +67,10 @@ int main(void)
             break;
         }
         }
-
     }
 
     printf("Summation result : (FWD, BWD) : (%d, %d)\n", nNumSumFwdFlip, nNumSumBwdFlip);
     printf("Probability : (FWD, BWD):(%.4lf, %.4lf)\n", (double)(nNumSumFwdFlip) / (NUM_FLIP), (double)(nNumSumBwdFlip) / (NUM_FLIP));
 
     return 0;
-}
+}   
