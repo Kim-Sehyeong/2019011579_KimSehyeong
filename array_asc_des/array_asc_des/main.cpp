@@ -29,16 +29,16 @@ int GenRandInt(int min, int max)
 }
 void AscSortRealArray(double* dArr, int nArrSize)
 {
-    int temp = 0;
-    for (int i = 0; i < nArrSize - 1; i++)
+    double temp = 0.0;
+    for (int i = 1; i < nArrSize; i++)
     {
-        for (int j = 0; j < nArrSize - 1 - i; i++)
+        for (int j = 0; j < nArrSize - 1; j++)
         {
-            if (dArr[i] > dArr[j + 1])
+            if (dArr[j] > dArr[i])
             {
-                temp = dArr[i];
-                dArr[i] = dArr[j + 1];
-                dArr[j + 1] = temp;
+                temp = dArr[j];
+                dArr[j] = dArr[i];
+                dArr[i] = temp;
             }
         }
     }
@@ -46,31 +46,31 @@ void AscSortRealArray(double* dArr, int nArrSize)
 void AscSortIntArray(int* nArr, int nArrSize)
 {
     int temp = 0;
-    for (int i = 0; i < nArrSize - 1; i++)
+    for (int i = 1; i < nArrSize; i++)
     {
-        for (int j = 0; j < nArrSize - 1 - i; i++)
+        for (int j = 0; j < nArrSize - 1; j++)
         {
-            if (nArr[i] > nArr[j + 1])
+            if (nArr[i] < nArr[j])
             {
-                temp = nArr[i];
-                nArr[i] = nArr[j + 1];
-                nArr[j + 1] = temp;
+                temp = nArr[j];
+                nArr[j] = nArr[i];
+                nArr[i] = temp;
             }
         }
     }
 }
 void DesSortRealArray(double* dArr, int nArrSize)
 {
-    int temp = 0;
-    for (int i = 0; i < nArrSize - 1; i++)
+    double temp = 0.0;
+    for (int i = 1; i < nArrSize; i++)
     {
-        for (int j = 0; j < nArrSize - 1 - i; i++)
+        for (int j = 0; j < nArrSize - 1; j++)
         {
-            if (dArr[i] < dArr[j + 1])
+            if (dArr[i] < dArr[j])
             {
-                temp = dArr[i];
-                dArr[i] = dArr[j + 1];
-                dArr[j + 1] = temp;
+                temp = dArr[j];
+                dArr[j] = dArr[j];
+                dArr[i] = temp;
             }
         }
     }
@@ -78,15 +78,15 @@ void DesSortRealArray(double* dArr, int nArrSize)
 void DesSortIntArray(int* nArr, int nArrSize)
 {
     int temp = 0;
-    for (int i = 0; i < nArrSize - 1; i++)
+    for (int i = 1; i < nArrSize; i++)
     {
-        for (int j = 0; j < nArrSize - 1 - i; i++)
+        for (int j = 0; j < nArrSize - 1; j++)
         {
-            if (nArr[i] < nArr[j + 1])
+            if (nArr[i] > nArr[j])
             {
-                temp = nArr[i];
-                nArr[i] = nArr[j + 1];
-                nArr[j + 1] = temp;
+                temp = nArr[j];
+                nArr[j] = nArr[i];
+                nArr[i] = temp;
             }
         }
     }
@@ -119,7 +119,6 @@ int main(void)
     int nArr[10] = {};
     int* pNArr = nArr;
     int num = 0;
-    const int nArrSize = sizeof(dArr) / sizeof(dArr[0]);
     const int min = -100;
     const int max = 100;
 
@@ -130,36 +129,36 @@ int main(void)
     {
         GenRandSeedInt();
 
-        for (int i = 0; i < nArrSize; i++)
+        for (int i = 0; i < 10; i++)
         {
             *(nArr + i) = GenRandInt(min, max);
         }
         printf("Random integer array : ");
-        PrintIntArr(nArr, nArrSize);
-        AscSortIntArray(nArr, nArrSize);
+        PrintIntArr(nArr, 10);
+        AscSortIntArray(nArr, 10);
         printf("Ascending integer array : ");
-        PrintIntArr(nArr, nArrSize);
-        DesSortIntArray(nArr, nArrSize);
+        PrintIntArr(nArr, 10);
+        DesSortIntArray(nArr, 10);
         printf("Descending integer array : ");
-        PrintIntArr(nArr, nArrSize);
+        PrintIntArr(nArr, 10);
 
     } 
     else if (num == 1)
     {
         GenRandSeedReal();
 
-        for (int i = 0; i < nArrSize; i++)
+        for (int i = 0; i < 10; i++)
         {
             *(dArr + i) = GenRandReal(min, max);
         }
         printf("Random real number array : ");
-        PrintRealArr(dArr, nArrSize);
-        AscSortRealArray(dArr, nArrSize);
+        PrintRealArr(dArr, 10);
+        AscSortRealArray(dArr, 10);
         printf("Ascending real number array : ");
-        PrintRealArr(dArr, nArrSize);
-        DesSortRealArray(dArr, nArrSize);
+        PrintRealArr(dArr, 10);
+        DesSortRealArray(dArr, 10);
         printf("Descending real number array : ");
-        PrintRealArr(dArr, nArrSize);
+        PrintRealArr(dArr, 10);
 
     }
     else
