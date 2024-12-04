@@ -34,10 +34,10 @@ void AscSortRealArray(double* dArr, int nArrSize)
     {
         for (int j = 0; j < nArrSize - 1 - i; i++)
         {
-            if (dArr[j] > dArr[j + 1])
+            if (dArr[i] > dArr[j + 1])
             {
-                temp = dArr[j];
-                dArr[j] = dArr[j + 1];
+                temp = dArr[i];
+                dArr[i] = dArr[j + 1];
                 dArr[j + 1] = temp;
             }
         }
@@ -50,10 +50,10 @@ void AscSortIntArray(int* nArr, int nArrSize)
     {
         for (int j = 0; j < nArrSize - 1 - i; i++)
         {
-            if (nArr[j] > nArr[j + 1])
+            if (nArr[i] > nArr[j + 1])
             {
-                temp = nArr[j];
-                nArr[j] = nArr[j + 1];
+                temp = nArr[i];
+                nArr[i] = nArr[j + 1];
                 nArr[j + 1] = temp;
             }
         }
@@ -66,10 +66,10 @@ void DesSortRealArray(double* dArr, int nArrSize)
     {
         for (int j = 0; j < nArrSize - 1 - i; i++)
         {
-            if (dArr[j] > dArr[j + 1])
+            if (dArr[i] < dArr[j + 1])
             {
-                temp = dArr[j];
-                dArr[j] = dArr[j + 1];
+                temp = dArr[i];
+                dArr[i] = dArr[j + 1];
                 dArr[j + 1] = temp;
             }
         }
@@ -82,10 +82,10 @@ void DesSortIntArray(int* nArr, int nArrSize)
     {
         for (int j = 0; j < nArrSize - 1 - i; i++)
         {
-            if (nArr[j] > nArr[j + 1])
+            if (nArr[i] < nArr[j + 1])
             {
-                temp = nArr[j];
-                nArr[j] = nArr[j + 1];
+                temp = nArr[i];
+                nArr[i] = nArr[j + 1];
                 nArr[j + 1] = temp;
             }
         }
@@ -113,8 +113,6 @@ void PrintRealArr(double* dArr, int nArrSize)
 
 int main(void)
 {
-    GenRandSeedInt();
-    GenRandSeedReal();
 
     double dArr[10] = {};
     double* pDArr = dArr;
@@ -130,6 +128,8 @@ int main(void)
 
     if (num == 0)
     {
+        GenRandSeedInt();
+
         for (int i = 0; i < nArrSize; i++)
         {
             *(nArr + i) = GenRandInt(min, max);
@@ -146,6 +146,8 @@ int main(void)
     } 
     else if (num == 1)
     {
+        GenRandSeedReal();
+
         for (int i = 0; i < nArrSize; i++)
         {
             *(dArr + i) = GenRandReal(min, max);
