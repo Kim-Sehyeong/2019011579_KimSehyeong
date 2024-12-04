@@ -118,7 +118,7 @@ int main(void)
 
     double dArr[10] = {};
     double* pDArr = dArr;
-    int nArr[5] = {};
+    int nArr[10] = {};
     int* pNArr = nArr;
     int num = 0;
     const int nArrSize = sizeof(dArr) / sizeof(dArr[0]);
@@ -146,11 +146,9 @@ int main(void)
     } 
     else if (num == 1)
     {
-        printf("Random real number array : ");
         for (int i = 0; i < nArrSize; i++)
         {
             *(dArr + i) = GenRandReal(min, max);
-            printf("%.2lf     ", *(dArr + i));
         }
         printf("Random real number array : ");
         PrintRealArr(dArr, nArrSize);

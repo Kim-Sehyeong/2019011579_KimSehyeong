@@ -84,7 +84,7 @@ int main(void)
 
     double dArr[10] = {};
     double* pDArr = dArr;
-    int nArr[5] = {};
+    int nArr[10] = {};
     int* pNArr = nArr;
     int num = 0;
     const int nArrSize = sizeof(dArr) / sizeof(dArr[0]);
