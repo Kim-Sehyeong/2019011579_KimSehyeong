@@ -34,7 +34,7 @@ void AscSortRealArray(double* dArr, int nArrSize)
     {
         for (int j = 0; j < nArrSize - 1; j++)
         {
-            if (dArr[j] > dArr[i])
+            if (dArr[i] < dArr[j])
             {
                 temp = dArr[j];
                 dArr[j] = dArr[i];
@@ -66,10 +66,10 @@ void DesSortRealArray(double* dArr, int nArrSize)
     {
         for (int j = 0; j < nArrSize - 1; j++)
         {
-            if (dArr[i] < dArr[j])
+            if (dArr[i] > dArr[j])
             {
                 temp = dArr[j];
-                dArr[j] = dArr[j];
+                dArr[j] = dArr[i];
                 dArr[i] = temp;
             }
         }
@@ -142,7 +142,7 @@ int main(void)
         printf("Descending integer array : ");
         PrintIntArr(nArr, 10);
 
-    } 
+    }
     else if (num == 1)
     {
         GenRandSeedReal();
@@ -168,5 +168,5 @@ int main(void)
 
 
 
-	return 0;
+    return 0;
 }
