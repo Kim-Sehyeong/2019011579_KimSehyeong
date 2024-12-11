@@ -24,31 +24,31 @@ unsigned int GenRandInt(unsigned int nMin, unsigned int nMax) //난수를 생성해서 
     return nNum; //nNum에 저장된 값을 반환
 }
 
-int sum(int* arr, int arr_size)
+int sum(int* p_arr, int arr_size)
 {
     int res = 0;
 
     for (int i = 0; i < arr_size; i++)
     {
-        res += *(arr + i);
+        res += *(p_arr + i);
     }
     return res;
 }
 
-void dev(int* arr, int avg, int arr_size, int* arr_dev)
+void dev(int* p_arr, int avg, int arr_size, int* p_arr_dev)
 {
     for (int i = 0; i < arr_size; i++)
     {
-        *(arr_dev + i) = *(arr + i) - avg;
+        *(p_arr_dev + i) = *(p_arr + i) - avg;
     }
 }
 
-int var(int avg, int arr_size, int* arr_dev)
+int var(int avg, int arr_size, int* p_arr_dev)
 {
     int res = 0;
     for (int i = 0; i < arr_size; i++)
     {
-        res += (*(arr_dev + i)) * (*(arr_dev + i));
+        res += (*(p_arr_dev + i)) * (*(p_arr_dev + i));
     }
     return res / arr_size;
 }
@@ -66,6 +66,7 @@ int main(void)
     int arr[10] = { };
     int arr_dev[10] = { };
     int* p_arr = arr;
+    int* p_arr_dev = arr_dev;
     const int arr_size = sizeof(arr) / sizeof(arr[0]);
     int sum_res, avg, var_res, std_dev_res = 0;
 
@@ -73,10 +74,10 @@ int main(void)
     {
         arr[i] = GenRandInt(MIN, MAX);
     }
-    sum_res = sum(arr, arr_size);
+    sum_res = sum(p_arr, arr_size);
     avg = sum_res / arr_size;
-    dev(arr, avg, arr_size, arr_dev);
-    var_res = var(avg, arr_size, arr_dev);
+    dev(p_arr, avg, arr_size, p_arr_dev);
+    var_res = var(avg, arr_size, p_arr_dev);
     std_dev_res = std_dev(var_res);
 
     printf("Random array composed with %d integers : ", arr_size);

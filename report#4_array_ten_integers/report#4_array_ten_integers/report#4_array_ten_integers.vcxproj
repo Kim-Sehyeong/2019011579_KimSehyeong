@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6023a9b8-1eb2-4ba2-b504-cdc8e1d90dfd}</ProjectGuid>
-    <RootNamespace>report4arrtenintegers</RootNamespace>
+    <ProjectGuid>{05a7c174-af2e-4148-a86e-37e118ebf786}</ProjectGuid>
+    <RootNamespace>report4arraytenintegers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
