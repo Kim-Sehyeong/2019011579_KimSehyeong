@@ -24,7 +24,7 @@ unsigned int GenRandInt(unsigned int nMin, unsigned int nMax) //난수를 생성해서 
     return nNum; //nNum에 저장된 값을 반환
 }
 
-int sum(int* p_arr, int arr_size)
+int sum(int* p_arr, int arr_size) // 배열 arr의 각 요소의 합을 구하는 함수
 {
     int res = 0;
 
@@ -35,7 +35,7 @@ int sum(int* p_arr, int arr_size)
     return res;
 }
 
-void dev(int* p_arr, int avg, int arr_size, int* p_arr_dev)
+void dev(int* p_arr, int avg, int arr_size, int* p_arr_dev) // 배열 arr의 각 요소와 평균의 차를 구해 배열 arr_dev에 대입
 {
     for (int i = 0; i < arr_size; i++)
     {
@@ -43,7 +43,7 @@ void dev(int* p_arr, int avg, int arr_size, int* p_arr_dev)
     }
 }
 
-int var(int avg, int arr_size, int* p_arr_dev)
+int var(int avg, int arr_size, int* p_arr_dev) // 배열 arr_dev의 각 요소의 제곱을 모두 더해 배열 크기로 나눔
 {
     int res = 0;
     for (int i = 0; i < arr_size; i++)
@@ -53,7 +53,7 @@ int var(int avg, int arr_size, int* p_arr_dev)
     return res / arr_size;
 }
 
-int std_dev(int var)
+int std_dev(int var) //표준편차
 {
     return sqrt(var);
 }
@@ -70,17 +70,21 @@ int main(void)
     const int arr_size = sizeof(arr) / sizeof(arr[0]);
     int sum_res, avg, var_res, std_dev_res = 0;
 
+    // 배열 arr의 각 요소로 난수를 대입
     for (int i = 0; i < arr_size; i++)
     {
         arr[i] = GenRandInt(MIN, MAX);
     }
-    sum_res = sum(p_arr, arr_size);
-    avg = sum_res / arr_size;
-    dev(p_arr, avg, arr_size, p_arr_dev);
-    var_res = var(avg, arr_size, p_arr_dev);
-    std_dev_res = std_dev(var_res);
 
-    printf("Random array composed with %d integers : ", arr_size);
+    // 함수 호출
+    sum_res = sum(p_arr, arr_size); // 합
+    avg = sum_res / arr_size; // 평균
+    dev(p_arr, avg, arr_size, p_arr_dev); // 편차
+    var_res = var(avg, arr_size, p_arr_dev); // 분산
+    std_dev_res = std_dev(var_res); // 표준 편차
+
+    // 난수로 구성된 배열 출력
+    printf("Random array composed with %d integers : ", arr_size); 
     for (int i = 0; i < arr_size; i++)
     {
         printf("%3d", *(arr + i));
