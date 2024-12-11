@@ -1,3 +1,2 @@
 ﻿  main.cpp
-C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\report#4_array_ten_integers\report#4_array_ten_integers\main.cpp(58,16): warning C4244: 'return': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   report#4_array_ten_integers.vcxproj -> C:\Users\a0102\Documents\GitHub\2019011579_KimSehyeong\report#4_array_ten_integers\x64\Debug\report#4_array_ten_integers.exe
